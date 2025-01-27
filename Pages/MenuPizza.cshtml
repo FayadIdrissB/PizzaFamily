@@ -1,0 +1,28 @@
+﻿@page
+@model PizzaFamily.Pages.MenuPizzaModel
+@{
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+    <h1>Menu des pizzas</h1>
+
+
+    <ul>
+        @foreach (var item in Model.Pizza)
+         {
+            <li>@item.Nom - @item.Prix € </li>
+         }
+    </ul>
+
+    <a asp-page="Index">Retour à l'acceuil</a>
+
+</body>
+</html>
