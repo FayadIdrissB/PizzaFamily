@@ -13,7 +13,11 @@
 </head>
 <body>
 
-    <a asp-page="MenuPizza"> <img src="~/image/small_logo.png" id="logoPizza" /> </a>
+    <div class="header-pizza">
+        <a asp-page="MenuPizza"> <img src="~/image/small_logo.png" id="logoPizza" /> </a>
+        <a asp-page="/Admin/index" class="lien"> <div class="connexion-admin">Connexion Administrateur</div> </a>
+    </div>
+
 
     <div class="menu_title">
         <h1>Les pizzas</h1>
@@ -28,11 +32,11 @@
                 <br />
                 <span class="menu_list_ingredient">@item.Ingredients </span>
                 @if (item.Vegetarienne)
-                 {
+                {
                     <span class="menu_list_badge">Végétarienne</span>
-                 }
+                }
             </div>
-            }
+        }
     </div>
 
 </body>
