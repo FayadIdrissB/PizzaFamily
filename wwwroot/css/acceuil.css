@@ -1,0 +1,28 @@
+﻿body
+{
+    background: url("/image/main_background.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial;
+    color: white;
+}
+
+
+.text-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.lienPizza
+{
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+}
